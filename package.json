@@ -1,0 +1,17 @@
+{
+    "name": "linkedin-antiprom",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:dev": "tsup src/index.ts --minify && @powershell copy \"./src/manifest.json\" \"./dist/manifest.json\" & @powershell copy \"./src/icons/*.png\" \"./dist/icons/\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tsup": "^4.8.21",
+        "typescript": "^4.2.4"
+    }
+}
