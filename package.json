@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build:dev": "tsup src/index.ts --minify && @powershell copy \"./src/manifest.json\" \"./dist/manifest.json\" & @powershell copy \"./src/icons/*.png\" \"./dist/icons/\"",
+        "build": "tsup src/index.ts --minify && @powershell copy \"./src/manifest.json\" \"./dist/manifest.json\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
