@@ -7,7 +7,7 @@
 
     "content_scripts": [
         {
-            "matches": ["https://www.linkedin.com/feed"],
+            "matches": ["https://www.linkedin.com/feed/"],
             "js": ["index.js"]
         }
     ]
