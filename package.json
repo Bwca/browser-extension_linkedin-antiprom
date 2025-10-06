@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "tsup src/index.ts --minify && @powershell copy \"./src/manifest.json\" \"./dist/manifest.json\"",
+    "build": "tsup src/index.ts --format iife --global-name LinkedInAntiProm --minify --outDir dist && cp ./src/manifest.json ./dist/manifest.json",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
